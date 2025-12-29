@@ -12,6 +12,10 @@
 
 # ObscuraRT: Real-Time Video Anonymization at the Edge
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=WlayerX/ObscuraRT&type=date&legend=bottom-right)](https://www.star-history.com/#WlayerX/ObscuraRT&type=date&legend=bottom-right)
+
 ## Overview
 
 **ObscuraRT** is a GPU-accelerated, privacy-preserving video processing system that anonymizes video frames in real-time using **Vulkan compute shaders**. Designed for edge deployment, it processes video locally without sending raw frames to the cloud.
