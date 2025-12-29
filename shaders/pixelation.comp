@@ -1,0 +1,37 @@
+#version 4.60
+#extension GL_ARB_compute_shader : enable
+#extension GL_ARB_shader_storage_buffer_object : enable
+
+layout(local_size_x = 16, local_size_y = 16) in;
+
+// Storage images
+layout(rgba8, binding = 0) uniform readonly image2D inputImage;
+layout(rgba8, binding = 1) uniform writeonly image2D outputImage;
+
+// Push constants (for MVP: empty, can add block_size later)
+// layout(push_constant) uniform PCBlock {
+//     uint block_size;
+// } pc;
+
+void main() {
+    ivec2 pixelCoord = ivec2(gl_GlobalInvocationID.xy);
+    
+    // Simple pixelation: sample every N pixels and replicate
+    uint block_size = 16u;
+    
+    // Calculate the block this pixel belongs to
+    ivec2 blockCoord = pixelCoord / int(block_size);
+    
+    // Sample from the top-left corner of the block
+    ivec2 sampleCoord = blockCoord * int(block_size);
+    
+    // Clamp to image bounds
+    ivec2 imageSize = imageSize(inputImage);
+    sampleCoord = clamp(sampleCoord, ivec2(0), imageSize - ivec2(1));
+    
+    // Read color from input
+    vec4 color = imageLoad(inputImage, sampleCoord);
+    
+    // Write to output (pixelated)
+    imageStore(outputImage, pixelCoord, color);
+}
