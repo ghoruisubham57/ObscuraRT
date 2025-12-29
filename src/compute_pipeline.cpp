@@ -35,12 +35,15 @@ void ComputePipeline::init(uint32_t width, uint32_t height) {
     width_ = width;
     height_ = height;
     
+    createImages();
+    createStagingBuffer();
     createShaderModule();
     createDescriptorSetLayout();
     createPipelineLayout();
     createComputePipeline();
     createDescriptorPool();
     allocateDescriptorSets();
+    updateDescriptorSets();
     createCommandBuffer();
     createSynchronization();
     

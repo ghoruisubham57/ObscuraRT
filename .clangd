@@ -1,0 +1,14 @@
+---
+CompileFlags:
+  CompilationDatabase: build/
+  Add:
+    - "-I${workspaceFolder}/include"
+    - "-I${workspaceFolder}/third_party/glm"
+
+InlayHints:
+  Enabled: true
+  ParameterHints: true
+  TypeHints: true
+
+Hover:
+  ShowAKA: true

@@ -1,4 +1,4 @@
-#version 4.60
+#version 460 core
 
 layout(location = 0) out vec2 fragTexCoord;
 

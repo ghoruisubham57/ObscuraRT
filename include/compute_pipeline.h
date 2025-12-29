@@ -38,6 +38,8 @@ public:
      */
     void processFrame(VkImage input_image, VkImage output_image, uint32_t block_size = 16);
     
+    VkImage getOutputImage() const { return output_image_; }
+    
     // Accessors
     VkDescriptorSet getDescriptorSet(uint32_t frame_index) const;
     
@@ -58,6 +60,16 @@ private:
     VkCommandBuffer compute_command_buffer_ = VK_NULL_HANDLE;
     VkFence compute_fence_ = VK_NULL_HANDLE;
     
+    VkImage input_image_ = VK_NULL_HANDLE;
+    VkImage output_image_ = VK_NULL_HANDLE;
+    VkDeviceMemory input_image_memory_ = VK_NULL_HANDLE;
+    VkDeviceMemory output_image_memory_ = VK_NULL_HANDLE;
+    VkImageView input_image_view_ = VK_NULL_HANDLE;
+    VkImageView output_image_view_ = VK_NULL_HANDLE;
+    
+    VkBuffer staging_buffer_ = VK_NULL_HANDLE;
+    VkDeviceMemory staging_buffer_memory_ = VK_NULL_HANDLE;
+    
     void createShaderModule();
     void createPipelineLayout();
     void createComputePipeline();
@@ -66,4 +78,7 @@ private:
     void allocateDescriptorSets();
     void createCommandBuffer();
     void createSynchronization();
+    void createImages();
+    void createStagingBuffer();
+    void updateDescriptorSets();
 };
