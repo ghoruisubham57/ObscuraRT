@@ -14,7 +14,7 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=WlayerX/ObscuraRT&type=date&legend=bottom-right)](https://www.star-history.com/#WlayerX/ObscuraRT&type=date&legend=bottom-right)
+[![Star History](https://api.star-history.com/svg?repos=WlayerX/ObscuraRT&type=Date&theme=dark)](https://star-history.com/#WlayerX/ObscuraRT&Date)
 
 ## Overview
 
